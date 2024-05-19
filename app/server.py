@@ -44,7 +44,7 @@ retriever_tool = create_retriever_tool(
 )
 
 # Create the search tool
-api_key = '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'
+api_key = 'YOUR_API_KEY'
 search = TavilySearchResults(api_wrapper=api_wrapper)
 tools = [retriever_tool, search]
 
