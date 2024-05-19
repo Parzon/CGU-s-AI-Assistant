@@ -1,3 +1,6 @@
+#To run this code, run this command in the terminal:
+#streamlit run testapp_almost_clear.py
+
 # Import necessary libraries
 import os
 import openai
@@ -31,7 +34,7 @@ def is_greeting(query):
     ]
     
     response = openai.chat.completions.create(
-        model="gpt-4-turbo",
+        model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=5
     )
@@ -46,7 +49,7 @@ def is_related_to_cgu(query, conversation_history):
     ]
     
     response = openai.chat.completions.create(
-        model="gpt-4-turbo",
+        model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=5
     )
@@ -71,7 +74,7 @@ def summarize_conversation_history(conversation_history):
     ]
     
     response = openai.chat.completions.create(
-        model="gpt-4-turbo",
+        model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=300
     )
@@ -89,7 +92,7 @@ def generate_response(query, conversation_history, query_type):
             {"role": "user", "content": ""}
         ]
         response = openai.chat.completions.create(
-            model="gpt-4-turbo",
+            model="gpt-3.5-turbo",
             messages=messages,
             max_tokens=150  # Increase token limit for greeting responses
         )
@@ -113,7 +116,7 @@ def generate_response(query, conversation_history, query_type):
         {"role": "user", "content": f"Question: {query}\n\nConversation history: {conversation_history}\n\nInformation:\n{combined_search_results}"}
     ]
     response = openai.chat.completions.create(
-        model="gpt-4-turbo",
+        model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=800  # Drastically increase token limit for detailed responses
     )
