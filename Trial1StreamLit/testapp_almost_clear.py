@@ -29,7 +29,7 @@ def fetch_information_from_url(query):
 # Function to check if the query is a greeting
 def is_greeting(query):
     messages = [
-        {"role": "system", "content": "Determine if the following text is a greeting. Respond with 'yes' or 'no'."},
+        {"role": "system", "content": "Determine if the following text is a greeting, greetings can be informal like heyoooo and how are yaaa, be lenient with it. Respond with 'yes' or 'no'."},
         {"role": "user", "content": query}
     ]
     
@@ -44,7 +44,7 @@ def is_greeting(query):
 # Function to check if the query is related to CGU
 def is_related_to_cgu(query, conversation_history):
     messages = [
-        {"role": "system", "content": "Determine if the following conversation, considering the history and current message, is talking about Claremont Graduate University (CGU) or if it is getting too general. Respond with 'cgu' or 'general'."},
+        {"role": "system", "content": "Determine if the following conversation, considering the history and current message, is talking about Claremont Graduate University (CGU) or if it is getting too general, rememeber they dont exclusively have to say CGU or the colleges name, understand from the context. Respond with 'cgu' or 'general'."},
         {"role": "user", "content": f"Conversation history: {conversation_history}\nCurrent message: {query}"}
     ]
     
@@ -112,7 +112,7 @@ def generate_response(query, conversation_history, query_type):
     # Use the language model to generate a response using the search results
     combined_search_results = "\n".join([f"{url}: {content}" for url, content in search_results])
     messages = [
-        {"role": "system", "content": "Answer the following question using the information provided, include relevant links and detailed steps where applicable."},
+        {"role": "system", "content": "Answer the following question using the information provided, include relevant links and detailed steps where applicable. Dont assume anything and only answer from the information provided"},
         {"role": "user", "content": f"Question: {query}\n\nConversation history: {conversation_history}\n\nInformation:\n{combined_search_results}"}
     ]
     response = openai.chat.completions.create(
@@ -147,4 +147,4 @@ if __name__ == "__main__":
 
     if user_input:
         response, st.session_state.conversation_history = handle_message(user_input, st.session_state.conversation_history)
-        st.write("Response:", response)
+        st.write(response)
