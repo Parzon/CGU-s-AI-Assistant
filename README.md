@@ -1,10 +1,10 @@
 # README for the CGU AI Assistant Project
 
-Welcome to the official repository of the Claremont Graduate University AI Assistant! Our mission is to make campus life easier and more accessible for both current and prospective students by providing instant, reliable answers to their frequently asked questions. Below, you'll find everything you need to understand about our project and how you can contribute or benefit from it.
+Welcome to the official repository of the Claremont Graduate University AI Assistant! Our mission is to make campus life easier and more accessible for current and prospective students, as well as faculty, by providing instant, reliable answers to frequently asked questions. Below, you'll find everything you need to understand our project and how you can contribute or benefit from it.
 
 ## Mission
 
-Our goal is to empower every student at Claremont Graduate University—prospective or current—by providing accurate, efficient assistance across the university's informational ecosystem.
+Our goal is to empower every student/faculty at Claremont Graduate University—prospective or current—by providing accurate, efficient assistance across the university's informational ecosystem.
 
 ## Vision
 
@@ -23,9 +23,9 @@ The AI Assistant project is brought to life by a diverse group of talented indiv
 ### Team Members
 
 - Dr. Yan Li
-- Yalan (Alice) Wang
+- Parzon Faridani
 - Kaije (Yuri) Yu
-- Pankaj Chaudhary
+- Yalan (Alice) Wang
 - Yongjia Sun
 - Yi Zhuang
-- Parzon Faridani
+- Pankaj Chaudhary
