@@ -29,3 +29,8 @@ The AI Assistant project is brought to life by a diverse group of talented indiv
 - Yongjia Sun
 - Yi Zhuang
 - Pankaj Chaudhary
+
+
+### To run the prototype of this code, run this command in the terminal:
+- navigate to the streamlittrial folder, enter your API keys in the file (testapp_almost_clear_google_retriever.py), create a Google CSE (Free, Customizable Search Engine)
+- then run the following command in terminal - streamlit run testapp_almost_clear_google_retriever.py

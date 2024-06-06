@@ -6,9 +6,9 @@ from langchain_community.utilities import GoogleSearchAPIWrapper
 from openai import OpenAI
 
 # Set up API keys
-os.environ["OPENAI_API_KEY"] = "sk-proj-YcXN3RqeYPmOFAzGBa6uT3BlbkFJpiNKLtMtGvothmVUVUD9"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyC_YRuIBDGxffMmnE02y7n33Q5kK399ueU"
-os.environ["GOOGLE_CSE_ID"] = "f25ef6a71b8714b28"
+os.environ["OPENAI_API_KEY"] = "your_openai_api_key_here"
+os.environ["GOOGLE_API_KEY"] = "your_google_api_key_here"
+os.environ["GOOGLE_CSE_ID"] = "your_cse_id_here"
 
 # Initialize OpenAI and Google Search clients
 openai.api_key = os.getenv("OPENAI_API_KEY")

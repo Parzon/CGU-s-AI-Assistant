@@ -8,8 +8,8 @@ from openai import OpenAI
 Client = OpenAI()
 
 # Export the API keys for OpenAI model and Tavily Search
-os.environ["OPENAI_API_KEY"] = "sk-proj-YcXN3RqeYPmOFAzGBa6uT3BlbkFJpiNKLtMtGvothmVUVUD9"
-os.environ["TAVILY_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "your_openai_api_key_here"
+os.environ["TAVILY_API_KEY"] = "your_tavily_api_key_here"
 
 # Initialize API keys
 openai.api_key = os.getenv("OPENAI_API_KEY")
