@@ -1,5 +1,5 @@
 # README for the CGU AI Assistant Project
-
+## This is a public version of the private repo, due to university policy. For demonstration purposes only. 
 Welcome to the official repository of the Claremont Graduate University AI Assistant! Our mission is to make campus life easier and more accessible for current and prospective students, as well as faculty, by providing instant, reliable answers to frequently asked questions. Below, you'll find everything you need to understand our project and how you can contribute or benefit from it.
 
 ## Mission
